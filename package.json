@@ -1,7 +1,7 @@
 {
   "name": "ember-is-fastboot",
   "version": "0.1.0",
-  "description": "Provides a mixin for checking FastBoot status",
+  "description": "Provides a mixin for addons to check the FastBoot status of their consuming apps",
   "keywords": [
     "ember-addon"
   ],

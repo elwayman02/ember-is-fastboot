@@ -1,7 +1,7 @@
 Ember Is Fastboot
 =================
 
-This addon provides a mixin to make it easy to know if your application or addon is currently in FastBoot mode. 
+This addon provides a mixin to make it easy to know if your addon is currently in FastBoot mode. 
 This approach is lovingly stolen from a great [PR](https://github.com/elwayman02/ember-user-activity/pull/67) 
 made by [@tylerturdenpants](https://github.com/tylerturdenpants)!
 
