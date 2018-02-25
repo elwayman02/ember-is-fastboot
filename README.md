@@ -1,7 +1,9 @@
-ember-is-fastboot
-==============================================================================
+Ember Is Fastboot
+=================
 
-[Short description of the addon.]
+This addon provides a mixin to make it easy to know if your application or addon is currently in FastBoot mode. 
+This approach is lovingly stolen from a great [PR](https://github.com/elwayman02/ember-user-activity/pull/67) 
+made by [@tylerturdenpants](https://github.com/tylerturdenpants)!
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,7 +16,28 @@ ember install ember-is-fastboot
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+The `is-fastboot` mixin is the only utility you need to use! It provides an 
+`_isFastBoot` computed that tells you if FastBoot mode is currently active.
+
+For example, if you have a service that needs to short-circuit some logic in FastBoot:
+
+```javascript
+// services/foo.js
+import Service from '@ember/service';
+import IsFastbootMixin from 'ember-is-fastboot/mixins/is-fastboot';
+
+export default Service.extend(IsFastbootMixin, {
+  doStuff() {
+    if (this.get('_isFastBoot')) {
+      return; // Don't do the stuff, we're in FastBoot mode
+    }
+    
+    // Do the stuff, we're not in FastBoot mode
+  }
+});
+```
+
+That's it! You can throw this mixin into any Ember object that needs to be FastBoot-aware.
 
 
 Contributing

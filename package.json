@@ -1,17 +1,17 @@
 {
   "name": "ember-is-fastboot",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Provides a mixin for checking FastBoot status",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Jordan Hawker <hawker.jordan@gmail.com> (https://www.JordanHawker.com)",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://www.github.com/elwayman02/ember-is-fastboot",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
